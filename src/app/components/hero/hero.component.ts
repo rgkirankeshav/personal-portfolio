@@ -11,20 +11,24 @@ import { trigger, style, transition, animate, stagger, query } from '@angular/an
     trigger('fadeInUp', [
       transition(':enter', [
         style({ opacity: 0, transform: 'translateY(30px)' }),
-        animate('0.8s ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
-      ])
+        animate('0.8s ease-out', style({ opacity: 1, transform: 'translateY(0)' })),
+      ]),
     ]),
     trigger('listAnimation', [
       transition('* => *', [
-        query(':enter', [
-          style({ opacity: 0, transform: 'translateY(20px)' }),
-          stagger(100, [
-            animate('0.6s ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
-          ])
-        ], { optional: true })
-      ])
-    ])
-  ]
+        query(
+          ':enter',
+          [
+            style({ opacity: 0, transform: 'translateY(20px)' }),
+            stagger(100, [
+              animate('0.6s ease-out', style({ opacity: 1, transform: 'translateY(0)' })),
+            ]),
+          ],
+          { optional: true }
+        ),
+      ]),
+    ]),
+  ],
 })
 export class HeroComponent implements OnInit {
   typedText = '';
@@ -48,7 +52,7 @@ export class HeroComponent implements OnInit {
   }
 
   openLinkedIn() {
-    window.open('https://www.linkedin.com/in/rgkiran/', '_blank');
+    window.open('https://www.linkedin.com/in/kiran-r-g-700684146/', '_blank');
   }
 
   openGithub() {
