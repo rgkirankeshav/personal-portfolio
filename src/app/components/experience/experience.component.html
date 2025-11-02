@@ -1,0 +1,24 @@
+<section id="experience">
+  <h2 class="section-title">Experience</h2>
+  <div class="timeline">
+    @for (exp of experiences; track exp.company; let i = $index) {
+      <div class="timeline-item" [class.left]="i % 2 === 0" [class.right]="i % 2 !== 0">
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>{{ exp.role }}</h3>
+            <div class="company-info">
+              <span class="company">{{ exp.company }}</span>
+              <span class="location">{{ exp.location }}</span>
+            </div>
+            <span class="period">{{ exp.period }}</span>
+          </div>
+          <ul class="achievements">
+            @for (achievement of exp.achievements; track achievement) {
+              <li>{{ achievement }}</li>
+            }
+          </ul>
+        </div>
+      </div>
+    }
+  </div>
+</section>
