@@ -1,0 +1,59 @@
+<section id="projects">
+  <h2 class="section-title">Personal Projects</h2>
+  <div class="projects-grid">
+    @for (project of projects; track project.name) {
+      <article class="project-card">
+        <div class="project-header">
+          <h3>{{ project.name }}</h3>
+          <p class="tagline">{{ project.tagline }}</p>
+        </div>
+
+        @if (project.thumbnail) {
+          <div class="project-media">
+            <img
+              [src]="project.thumbnail"
+              [alt]="project.name + ' preview'"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        }
+
+        <p class="description">{{ project.description }}</p>
+
+        <div class="project-overview">
+          <h4>Overview</h4>
+          <ul>
+            @for (item of project.overview; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </div>
+
+        <div class="project-tech">
+          <h4>Tech Stack</h4>
+          <div class="tech-table">
+            @for (stack of project.techStack; track stack.layer) {
+              <div class="tech-row">
+                <span class="layer">{{ stack.layer }}</span>
+                <span class="tools">{{ stack.tools }}</span>
+              </div>
+            }
+          </div>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn primary" [href]="project.liveUrl" target="_blank" rel="noopener">
+            View Live
+          </a>
+          @if (project.repoUrl) {
+            <a class="btn secondary" [href]="project.repoUrl" target="_blank" rel="noopener">
+              View Code
+            </a>
+          }
+        </div>
+      </article>
+    }
+  </div>
+</section>
+

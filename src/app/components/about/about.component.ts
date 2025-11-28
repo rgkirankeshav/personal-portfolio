@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './about.component.scss',
 })
 export class AboutComponent {
-  summary = `Senior Angular Developer with 4.10 years of experience building scalable, responsive, and
+  summary = `Senior Angular Developer with 4.11 years of experience building scalable, responsive, and
   enterprise-grade web applications using Angular (2–18), TypeScript, and modern UI frameworks.
   Proven expertise in developing reusable components, leading Angular migration projects,
   optimizing performance, and integrating APIs. Skilled in Agile development, CI/CD pipelines, and

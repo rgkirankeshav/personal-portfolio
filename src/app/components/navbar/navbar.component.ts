@@ -16,6 +16,7 @@ export class NavbarComponent {
     { label: 'About', link: '#about' },
     { label: 'Experience', link: '#experience' },
     { label: 'Skills', link: '#skills' },
+    { label: 'Projects', link: '#projects' },
     { label: 'Education', link: '#education' },
     { label: 'Contact', link: '#contact' }
   ];
