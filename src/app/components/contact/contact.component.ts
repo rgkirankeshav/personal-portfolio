@@ -31,14 +31,14 @@ export class ContactComponent {
     {
       icon: 'linkedin',
       label: 'LinkedIn',
-      value: 'linkedin.com/in/rgkiran',
+      value: 'https://www.linkedin.com/in/kiran-r-g-700684146',
       link: 'https://www.linkedin.com/in/kiran-r-g-700684146',
     },
     {
       icon: 'github',
       label: 'GitHub',
-      value: 'github.com/rgkiran',
-      link: 'https://github.com/rgkiran',
+      value: 'https://github.com/rgkirankeshav',
+      link: 'https://github.com/rgkirankeshav',
     },
   ];
 
