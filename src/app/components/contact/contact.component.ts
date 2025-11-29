@@ -12,7 +12,7 @@ interface ContactInfo {
   selector: 'app-contact',
   imports: [CommonModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
   contactInfo: ContactInfo[] = [
@@ -20,26 +20,26 @@ export class ContactComponent {
       icon: 'email',
       label: 'Email',
       value: 'rgkiran.ramia@gmail.com',
-      link: 'mailto:rgkiran.ramia@gmail.com'
+      link: 'mailto:rgkiran.ramia@gmail.com',
     },
     {
       icon: 'phone',
       label: 'Phone',
       value: '+91 8667453887',
-      link: 'tel:+918667453887'
+      link: 'tel:+918667453887',
     },
     {
       icon: 'linkedin',
       label: 'LinkedIn',
       value: 'linkedin.com/in/rgkiran',
-      link: 'https://www.linkedin.com/in/rgkiran/'
+      link: 'https://www.linkedin.com/in/kiran-r-g-700684146',
     },
     {
       icon: 'github',
       label: 'GitHub',
       value: 'github.com/rgkiran',
-      link: 'https://github.com/rgkiran'
-    }
+      link: 'https://github.com/rgkiran',
+    },
   ];
 
   currentYear = new Date().getFullYear();
